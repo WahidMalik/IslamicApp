@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/prayerback"
+    tools:context=".PrayerActivity">
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbar"
+        android:layout_margin="@dimen/_10sdp"
+        android:iconifiedByDefault="true"
+        android:queryHint="Search"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:enabled="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:background="@drawable/buttongreen"
+        android:layout_marginRight="@dimen/_10sdp"
+        />
+
+        <TextView
+            android:id="@+id/fajarTimeDisplay"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_160sdp"
+            />
+
+
+        <TextView
+            android:id="@+id/zoharTimeDisplay"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            />
+
+        <TextView
+            android:id="@+id/asarTimeDisplay"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/maghribTimeDisplay"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            />
+
+
+        <TextView
+            android:id="@+id/ishaTimeDisplay"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            />
+
+</LinearLayout>

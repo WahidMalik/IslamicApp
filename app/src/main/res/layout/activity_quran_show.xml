@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".QuranShow">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfviewer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:text="Previous"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:text="Menu"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:text="Next"
+            android:background="@drawable/buttongreen"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
